@@ -34,3 +34,4 @@ default:
 clean:
 	rm -rf *~ .tmp_versions modules.order Module.symvers
 	find . -type f -name "*~" -o -name "*.o" -o -name "*.ko" -o -name "*.cmd" -o -name "*.mod.c" -name "*.mod"|  xargs rm -rf
+	rm uvcvideo.mod uvcvideo.mod.c
