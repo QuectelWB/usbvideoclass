@@ -1,0 +1,140 @@
+[116008.105782] mc: Linux media interface: v0.10
+[116008.131448] videodev: Linux video capture interface: v2.00
+[116008.254523] uvcvideo: Probing generic UVC device 5
+[116008.259061] uvcvideo: Found format YUV 4:2:2 (YUYV).
+[116008.259063] uvcvideo: - 640x480 (30.0 fps)
+[116008.259064] uvcvideo: - 160x120 (30.0 fps)
+[116008.259065] uvcvideo: - 176x144 (30.0 fps)
+[116008.259066] uvcvideo: - 320x240 (30.0 fps)
+[116008.259067] uvcvideo: - 352x288 (30.0 fps)
+[116008.259068] uvcvideo: - 640x480 (30.0 fps)
+[116008.259073] uvcvideo: Found a Status endpoint (addr 83).
+[116008.259075] uvcvideo: Found UVC 1.00 device USB2.0 VGA UVC WebCam (04f2:b483)
+[116008.263732] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/2 to device 5 entity 1
+[116008.263736] uvcvideo: Adding mapping 'Exposure, Auto' to control 00000000-0000-0000-0000-000000000001/2.
+[116008.268347] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/3 to device 5 entity 1
+[116008.268350] uvcvideo: Adding mapping 'Exposure, Auto Priority' to control 00000000-0000-0000-0000-000000000001/3.
+[116008.272963] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/4 to device 5 entity 1
+[116008.272965] uvcvideo: Adding mapping 'Exposure (Absolute)' to control 00000000-0000-0000-0000-000000000001/4.
+[116008.277563] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/2 to device 5 entity 3
+[116008.277565] uvcvideo: Adding mapping 'Brightness' to control 00000000-0000-0000-0000-000000000101/2.
+[116008.282174] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/3 to device 5 entity 3
+[116008.282177] uvcvideo: Adding mapping 'Contrast' to control 00000000-0000-0000-0000-000000000101/3.
+[116008.286803] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/6 to device 5 entity 3
+[116008.286806] uvcvideo: Adding mapping 'Hue' to control 00000000-0000-0000-0000-000000000101/6.
+[116008.292125] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/7 to device 5 entity 3
+[116008.292127] uvcvideo: Adding mapping 'Saturation' to control 00000000-0000-0000-0000-000000000101/7.
+[116008.297443] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/8 to device 5 entity 3
+[116008.297445] uvcvideo: Adding mapping 'Sharpness' to control 00000000-0000-0000-0000-000000000101/8.
+[116008.302761] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/9 to device 5 entity 3
+[116008.302763] uvcvideo: Adding mapping 'Gamma' to control 00000000-0000-0000-0000-000000000101/9.
+[116008.307391] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/10 to device 5 entity 3
+[116008.307394] uvcvideo: Adding mapping 'White Balance Temperature' to control 00000000-0000-0000-0000-000000000101/10.
+[116008.312006] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/1 to device 5 entity 3
+[116008.312009] uvcvideo: Adding mapping 'Backlight Compensation' to control 00000000-0000-0000-0000-000000000101/1.
+[116008.316625] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/5 to device 5 entity 3
+[116008.316628] uvcvideo: Adding mapping 'Power Line Frequency' to control 00000000-0000-0000-0000-000000000101/5.
+[116008.321264] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/11 to device 5 entity 3
+[116008.321268] uvcvideo: Adding mapping 'White Balance Temperature, Auto' to control 00000000-0000-0000-0000-000000000101/11.
+[116008.321270] uvcvideo: Scanning UVC chain: OT 4 <- XU 2 <- XU 5 <- PU 3 <- IT 1
+[116008.321274] uvcvideo: Found a valid video chain (1 -> 4).
+[116008.328662] input: USB2.0 VGA UVC WebCam: USB2.0 V as /devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input17
+[116008.328780] uvcvideo: UVC device initialized.
+[116008.328850] usbcore: registered new interface driver uvcvideo
+[116008.328852] USB Video Class driver (1.1.1)
+[116008.672374] uvcvideo: uvc_v4l2_open
+[116008.672451] uvcvideo: uvc_v4l2_release
+
+
+
+-----------------------
+
+
+filename:       /lib/modules/5.8.0-50-generic/kernel/drivers/media/usb/uvc/uvcvideo.ko
+version:        1.1.1
+license:        GPL
+description:    USB Video Class driver
+author:         Laurent Pinchart <laurent.pinchart@ideasonboard.com>
+srcversion:     862F793C915F53D24A459E0
+alias:          usb:v*p*d*dc*dsc*dp*ic0Eisc01ip01in*
+alias:          usb:v*p*d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v8086p0B03d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v29FEp4D53d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v2833p0211d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v2833p0201d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v1C4Fp3000d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v1B3Fp2002d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v1B3Bp2951d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v19ABp1000d00*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v19ABp1000d01[0-1]*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v19ABp1000d012[0-6]dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v199Ep8102d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v18ECp3290d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v18ECp3288d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v18ECp3188d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v18CDpCAFEd*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v1871p0516d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v1871p0306d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v17EFp480Bd*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v17DCp0202d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp8A34d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp8A33d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp8A31d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp8A12d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp5931d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v174Fp5212d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v152Dp0310d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v13D3p5103d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0E8Dp0004d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0BD3p0555d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0AC8p3420d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0AC8p3410d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0AC8p332Dd*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v06F8p300Cd*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05E3p0505d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05C8p0403d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05ACp8600d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05ACp8501d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05A9p7670d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05A9p264Ad*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05A9p2643d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05A9p2641d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v05A9p2640d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v058Fp3820d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v04F2pB071d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v046Dp082Dd*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v046Dp08C7d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v046Dp08C6d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v046Dp08C5d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v046Dp08C3d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v046Dp08C2d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v046Dp08C1d*dc*dsc*dp*icFFisc01ip00in*
+alias:          usb:v045Ep0723d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v045Ep0721d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v045Ep00F8d*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0458p706Ed*dc*dsc*dp*ic0Eisc01ip00in*
+alias:          usb:v0416pA91Ad*dc*dsc*dp*ic0Eisc01ip00in*
+depends:        videobuf2-v4l2,videodev,videobuf2-common,videobuf2-vmalloc,mc
+retpoline:      Y
+name:           uvcvideo
+vermagic:       5.8.0-50-generic SMP mod_unload modversions 
+parm:           clock:Video buffers timestamp clock
+parm:           hwtimestamps:Use hardware timestam
+ps (uint)
+parm:           nodrop:Don't drop incomplete frames (uint)
+parm:           quirks:Forced device quirks (uint)
+parm:           trace:Trace level bitmask (uint)
+parm:           timeout:Streaming control requests timeout (uint)
+
+
+----------
+
+w@BW:/sys/module/uvcvideo/parameters$ cat  /sys/module/uvcvideo/parameters/trace
+clock         hwtimestamps  nodrop        quirks        timeout       trace
+
+
+
+
+
+
+

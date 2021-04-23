@@ -26,10 +26,16 @@ endif
 endif
 endif
 
+KVERSION := $(shell uname -r)
 
 default:
 	$(MAKE) ARCH=${ARCH} CROSS_COMPILE=${CROSS_COMPILE} -C $(KDIR) M=$(PWD) modules
 
+install:
+	cp uvcvideo.ko /lib/modules/${KVERSION}/kernel/drivers/media/usb/uvc/
+	depmod
+	sudo modprobe -r uvcvideo
+	sudo modprobe uvcvideo
 
 clean:
 	rm -rf *~ .tmp_versions modules.order Module.symvers
